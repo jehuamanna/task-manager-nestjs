@@ -1,6 +1,6 @@
 import { BadRequestException, PipeTransform } from "@nestjs/common";
 import { UpdateTaskStatusDto } from "../dto/update-task-status.dto";
-import { Task, TaskStatus } from "../task.model";
+import {  TaskStatus } from "../task-status-enum";
 
 export class TaskStatusValidationPipe implements PipeTransform {
     allowedStatuses :any  = [
